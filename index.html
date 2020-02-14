@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>朱海与梁菁日期纪念功能</title>
-	    
+		<title>2020 Valentine's</title>
+	    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <link type="text/css" rel="stylesheet" href="./index_files/default.css">
 		<script type="text/javascript" src="./index_files/jquery.min.js"></script>
 		<script type="text/javascript" src="./index_files/jscex.min.js"></script>
@@ -24,31 +24,31 @@
             <div id="wrap">
                 <div id="text">
 			        <div id="code">
-			        	<span class="say">* 致女某某： *</span><br>
+			        	<span class="say">* 我欢喜喜欢你 *</span><br>
 						<span class="say"> </span><br>
-			        	<span class="say">· 女某某，情人节快乐！</span><br>
+			        	<span class="say">· Happy Valentine's Day！</span><br>
 						<span class="say"> </span><br>
-                        <span class="say">· 不经意相识, 或许是缘分，或许是注定的。</span><br>
+                        <span class="say">· 请收下这份来自年少的欢喜</span><br>
 						<span class="say"> </span><br>
-			        	<span class="say">· 虽然.....，但......！</span><br>
+			        	<span class="say">· 拆开它里边藏着清秀的几句</span><br>
 						<span class="say"> </span><br>
-			        	<span class="say">· 虽然......，但.......！</span><br>
+			        	<span class="say">· 我欢喜 </span><br>
 						<span class="say"> </span><br>
-			        	<span class="say">· 虽然......，但......！</span><br>
+			        	<span class="say">· 喜欢你</span><br>
 						<span class="say"> </span><br>
-			        	<span class="say">· 虽然......</span><br>
+			        	<span class="say">· 你是浪漫的惊喜</span><br>
 						<span class="say"> </span><br>
-			        	<span class="say">· 无论如何，只要你我依旧喜欢对方，我会一直陪着你。</span><br>
+			        	<span class="say">· 想把我送给你</span><br>
                         <span class="say"> </span><br>
-                        <span class="say">· You are my only girlfriend.</span><br>
+                        <span class="say">· 在扑朔和更迭里</span><br>
 						<span class="say"> </span><br>
-						<span class="say">· I love you,×××!</span><br>
+						<span class="say">· 在有趣的灵魂里</span><br>
 						<span class="say"> </span><br>
-                        <span class="say"><span class="space"></span>--@author 男某某--</span>
+                        <span class="say"><span class="space"></span>我欢喜喜欢你</span>
 			        </div>
                 </div>
                 <div id="clock-box">
-                    <span class="STYLE1">现在是</span>男某某 <span class="STYLE1" style="color: red">❤</span> 女某某<span class="STYLE1" style="color: red">相恋</span>
+                    <span class="STYLE1">现在是</span>我们 <span class="STYLE1" style="color: red">❤</span> 相恋<span class="STYLE1" style="color: red">❤</span>
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -190,11 +190,11 @@
        //下面修改起始日期
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    together.setFullYear(2020, 1, 2); 			//时间年月日 月份0~11
-		    together.setHours(22);						//小时	
-		    together.setMinutes(22);					//分钟
-		    together.setSeconds(2);					//秒前一位
-		    together.setMilliseconds(2);				//秒第二位
+		    together.setFullYear(2020, 1, 14); 			//时间年月日 月份0~11(起始位置是0，代码并未＋1，修改的时候注意就好，对于页面倒无影响)
+		    together.setHours(0);						//小时	
+		    together.setMinutes(0);					//分钟
+		    together.setSeconds(0);					//秒前一位
+		    together.setMilliseconds(0);				//秒第二位
 
 		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
@@ -218,6 +218,6 @@
         runAsync().start();
     })();
     </script>
-    <iframe src = "./你知道我在等你吗.mp3" allow = "autoplay" hidden /> //自己修改音乐位置
+    <iframe src = "./我欢喜喜欢你.mp3" allow = "autoplay" hidden /> //自己修改音乐位置
 </body>
 </html>
